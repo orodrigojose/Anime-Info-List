@@ -1,0 +1,62 @@
+.error-container {
+  width: 100vw;
+  height: 70vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-content {
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 22px;
+}
+
+.error-content > h1 {
+  font-size: 35pt;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+.ghost-icon {
+  animation: floating 2s ease infinite;
+}
+
+@keyframes floating {
+  0% {transform: translateY(0)}
+  50% {transform: translateY(-7px)}
+  100% {transform: translateY(0)}
+}
+
+.error-content > span {
+  width: 80%;
+}
+
+.error-content > a {
+  width: 130px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  transition: transform .5s ease;
+  background-color: var(--primary-color);
+}
+
+.error-content > a:hover {
+  transform: scale(1.11);
+}
+
+.home-icon {
+  width: 100%;
+  height: 80%;
+  color: #ffff;
+}

@@ -1,0 +1,18 @@
+.file-image {
+  width: 30%;
+  height: 30%;
+}
+
+.error-image-poster,
+.error-image-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-weight: bold;
+  color: #191919;
+  border: 2px dashed var(--secondary-color);
+  background-color: var(--primary-color);
+}

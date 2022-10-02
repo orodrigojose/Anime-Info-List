@@ -1,0 +1,161 @@
+header > .error-image-cover,
+header > img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(0.45);
+}
+
+#back-button {
+  width: 20px;
+  margin: 10px;
+  color: white;
+  border: none;
+
+  position: absolute;
+  left: 15px;
+  z-index: 2;
+  transition: all 0.6s ease;
+}
+
+#back-button:hover {
+  color: var(--primary-color);
+}
+
+.anime-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  position: relative;
+  top: 100px;
+  z-index: 3000;
+  margin-bottom: 100px;
+}
+
+.anime-header {
+  width: 70%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.anime-header > .error-image-poster,
+.anime-header > img {
+  width: 28%;
+}
+
+.header-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin-bottom: 10px;
+  gap: 5px;
+}
+
+#anime-title {
+  color: white;
+  text-align: center;
+
+  font-size: 20pt;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+
+#anime-subtitle {
+  color: var(--secondary-color);
+  text-align: center;
+
+  font-size: 17px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.some-infos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.some-infos > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 3px 6px;
+  border-radius: 10px;
+  color: var(--text-color-light);
+  background-color: var(--secondary-color);
+  font-size: 10pt;
+}
+
+#trailer-button {
+  width: 90%;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px auto;
+  background-color: var(--primary-color);
+}
+
+.anime-infos {
+  width: 60%;
+  margin: 60px 0 80px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.anime-infos > h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+
+  border-left: 3px solid var(--primary-color);
+  padding-left: 8px;
+  margin: 30px 0 15px 0;
+}
+
+.anime-infos > p > a {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .anime-header {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .anime-header > .error-image-poster ,
+  .anime-header > img {
+    width: 62%;
+  }
+  
+  .anime-content {
+    top: 67px;
+  }
+
+  .header-infos,
+  .anime-infos {
+    width: 82%;
+  }
+
+  .header-infos {
+    gap: 2px;
+  }
+}

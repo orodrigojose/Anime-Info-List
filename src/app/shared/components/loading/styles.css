@@ -1,0 +1,25 @@
+.loading-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-container > p {
+  font-weight: bold;
+}
+
+.loading-icon {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+	0% {transform: rotate(0)}
+	100% {transform: rotate(360deg)}
+}

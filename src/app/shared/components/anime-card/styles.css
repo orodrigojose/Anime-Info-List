@@ -1,0 +1,75 @@
+.anime-card {
+  max-width: 30%;
+  margin-bottom: 18px;
+  opacity: 0;
+  animation: fade .7s ease forwards;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.31); 
+  box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.31);
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.anime-card:hover {
+  filter: brightness(0.9);
+}
+
+.anime-card > img,
+.anime-card > .error-image-poster {
+  max-width: 100%;
+}
+
+.anime-card.light {
+  background-color: #f6f6f6;
+  border: 1px solid rgba(45, 45, 45, 0.1);
+}
+
+.anime-card.dark {
+  background-color: rgba(30, 30, 30, .8);
+  border: 1px solid rgba(20, 20, 20, 0.3);
+}
+
+.anime-title {
+  margin-bottom: 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 15pt;
+}
+
+#favorite-count {
+  position: absolute;
+  color: #e8e368;
+  align-self: flex-end;
+  padding: 2px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgb(19, 19, 19, 0.7);
+}
+
+#favorite-count > #star-icon {
+  width: 13px;
+  height: 13px;
+}
+
+#info-btn {
+  width: 100%;
+  height: 26px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 11pt;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .anime-card > .error-image-poster {
+    max-height: 210px;
+  }
+}

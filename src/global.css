@@ -1,0 +1,45 @@
+:root {
+  --navbar-background: #191919;
+  --primary-color: #BB86FC;
+  --secondary-color: #88c2fc;
+
+	--background-dark:  #262626;
+  --text-color-dark: #fff;
+
+  --background-light: #f2f2f2;
+  --text-color-light: #1F1B24;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+/* style */
+body.dark {
+  color: var(--text-color-dark);
+  background-color: var(--background-dark);
+}
+
+body.light {
+  color: var(--text-color-light);
+  background-color: var(--background-light);
+}
