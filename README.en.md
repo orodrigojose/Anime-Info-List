@@ -13,6 +13,8 @@
 
 > View the informations from your favorites anime in an interface made with ReactJs ans using the KitsuAPI
 
+* ⚠️ The project was done only for the practice of the learned knowledge of reactjs and didactic purposes
+
 ## 🐢 Getting started
 Before you go to the next steps, look a bit at how project was [structured](STRUCTURE.md), it maybe of great help to you
 
